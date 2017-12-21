@@ -1,0 +1,40 @@
+.pseudo
+    display: block
+    width: 100%
+    position: relative
+    &-menu
+        &:before
+            content: ''
+            position: absolute
+            top: 20%
+            left: -20%
+            transform: translate(-50%, 0)
+            background-repeat: no-repeat
+            background-image: url('../img/menu-options.svg')
+            width: 35px
+            height: 30px
+            background-size: 35px 25px
+    &-sign
+        &:before
+            content: ''
+            position: absolute
+            top: 0%
+            left: 20%
+            transform: translate(-50%, 0)
+            background-repeat: no-repeat
+            background-image: url('../img/male.svg')
+            width: 25px
+            height: 25px
+            background-size: 22px 20px
+    &-country
+        &:before
+            content: ''
+            position: absolute
+            top: 0%
+            left: 10%
+            transform: translate(-50%, 0)
+            background-repeat: no-repeat
+            background-image: url('../img/grid-world.svg')
+            width: 35px
+            height: 30px
+            background-size: 35px 25px

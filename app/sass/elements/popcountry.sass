@@ -1,0 +1,73 @@
+.country:hover div.popcountry-top
+    visibility: visible
+    opacity: 1
+    transform: translateY(0)
+    
+.popcountry
+    padding: 18px 0
+    list-style: none
+    margin: 0
+    padding: 0
+    &-top
+        width: 560px
+        position: absolute
+        top: 44px
+        margin: 0
+        padding: 0
+        list-style: none
+        left: -350px
+        visibility: hidden
+        opacity: 0
+        transform: translateY(15px)
+        transition: all 0.4s
+    & li
+        width: 34%
+        list-style: none
+        margin: 0
+        padding: 0
+    &__link
+        padding: 7px 8px 7px 18px
+    &__list
+        position: absolute
+        top: 0
+        left: 34%
+        width: 66%
+        padding: 17px 0 17px 34%
+        background: #e1e8eb
+        margin-left: -34%
+        min-height: 210px
+        margin: 0
+        list-style: none
+        
+//.popcountry__link:hover .countrylist
+//    visibility: visible
+//    opacity: 1
+        
+.countrylist
+    float: left
+    width: 50%
+//    visibility: hidden
+//    opacity: 0
+//    transition: all 0.4s
+    
+.country
+    position: relative;
+    padding: 5px 8px 5px 30px
+    font-size: 15px
+    display: block
+    color: #324b5c
+    text-decoration: none
+    &:before
+        left: 9px
+        top: -7px
+        margin: 0
+        opacity: 0
+        width: 16px
+        height: 24px
+        content: ''
+        display: block
+        position: absolute
+        background-size: 16px
+        background-repeat: no-repeat
+        background-image: url('../img/placeholder.svg')
+        color: #324b5c

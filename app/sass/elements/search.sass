@@ -1,0 +1,33 @@
+.search
+    width: 20%
+    text-align: center
+    height: 44px
+    & form
+        height: 44px
+        position: relative
+    &__content
+        outline: none
+        height: 33px
+        margin: 1% 0
+        width: 95%
+        font-size: 18px
+    &__btn
+        display: none
+        &-custom
+            position: relative
+            width: 1.43vw
+            height: 1.43vw
+            margin: 0 0 0 -3%
+            &:before
+                content: ''
+                position: absolute
+                top: 50%
+                right: 50%
+                transform: translateY(-50%)
+                background-image: url('../img/magnifier.svg')
+                background-repeat: no-repeat
+                width: 1.65vw
+                height: 1.65vw
+                background-size: 1.63vw 1.63vw
+            &:hover
+                cursor: pointer

@@ -1,0 +1,78 @@
+.sign:hover .popsign
+    visibility: visible
+    opacity: 1
+    transform: translateY(0)
+    
+.popsign
+    visibility: hidden
+    opacity: 0
+    transform: translateY(15px)
+    transition: all 0.6s
+    background-color: #a7a7a7
+    display: table
+    padding: 35px 0 30px
+    width: 550px
+    background: #e1e8eb
+    position: absolute
+    box-shadow: 0px 8px 25px 0px rgba(0,0,0,0.1)
+    top: 44px
+    left: -235px
+    &__cloud
+        border-left: 1px #b5cad5 solid
+    &__item
+        display: inline-block
+        display: table-cell
+        padding: 3px 30px
+        width: 50%
+        text-align: center
+        margin: 0
+        &-title
+            font-size: 18px
+            color: #333
+            margin: 0 0 8px
+        &-content
+            font-size: 14px
+            color: #333
+            margin: 0 0 19px
+        &-sign
+            text-decoration: none
+            clear: both
+            display: block
+            font-size: 17px
+            padding: 9px 12px
+            margin: 0
+            background: #00758f
+            font-weight: bold
+            color: #fff
+            transition: background .2s ease,color .2s ease
+            &:hover
+                color: #fff
+                background: #003b4d
+                text-decoration: none
+                outline: 0
+        &-list
+            padding: 7px 0 0
+            margin: 0
+            color: #324b5c
+            list-style: none
+        &-create
+            font-size: 15px
+            padding: 0 .65em 0 .6em
+            display: inline-block
+            margin: .8em 0 0 0
+            line-height: 1
+            font-weight: bold
+            & a
+                color: #00758f
+                text-decoration: none
+                &:hover
+                text-decoration: underline
+        &-help
+            border: 0
+            font-size: 15px
+            padding: 0 .65em 0 .6em
+            display: inline-block
+            border-left: 1px solid #adc5d1
+            margin: .8em 0 0 0
+            line-height: 1
+            font-weight: bold
