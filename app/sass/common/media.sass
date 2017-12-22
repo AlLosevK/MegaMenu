@@ -1,0 +1,48 @@
+@media screen and (max-width: 1080px)
+    .sign
+        width: 3%
+    .sign__item
+        display: none
+    .sign__item-mob
+        display: block
+    .pseudo-sign::before
+        left: 50%
+    .countries
+        width: 3%
+        margin: 0 5% -0px 0
+    .countries__item
+        display: none
+    .countries__item-mob
+        display: block
+        
+    
+@media screen and (max-width: 770px)
+    .menu,
+    .sign,
+    .countries
+        display: none
+    
+    .menu-mob
+        display: block
+    
+    .pseudo-menu::before
+        top: 0
+        left: 50%
+    
+    .box
+        display: block
+    
+    .sign__item
+        display: none
+        &-mob
+            display: block
+    
+    .whitespace-right
+        display: none
+    .whitespace-left
+        display: block
+
+@media screen and (max-width: 600px)
+    .search__btn-custom::before
+        top: -100%
+        right: -1.5em

@@ -8,3 +8,24 @@ $(".country").click(function (e) {
     $(".country").removeClass('country__active');
     $(this).addClass('country__active');
 })
+
+jQuery(document).ready(function ($) {
+    $("#menu").mmenu({
+        "offCanvas": {
+            "position": "right"
+        },
+        "navbars": [
+            {
+                "position": "top"
+                  },
+            {
+                "position": "bottom",
+                "content": [
+                        "<a class='fa fa-envelope' href='#/'></a>",
+                        "<a class='fa fa-twitter' href='#/'></a>",
+                        "<a class='fa fa-facebook' href='#/'></a>"
+                     ]
+                  }
+               ]
+    });
+});
