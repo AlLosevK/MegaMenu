@@ -2,6 +2,15 @@
     width: 20%
     text-align: center
     height: 44px
+    &__item
+        display: block
+    &-mob
+        position: relative
+        display: none
+        height: 44px
+        width: 60px
+        border: none
+        background-color: #fff
     & form
         height: 44px
         position: relative
@@ -15,14 +24,11 @@
         display: none
         &-custom
             position: relative
-            width: 1.43vw
-            height: 1.43vw
-            margin: 0 0 0 -3%
             &:before
                 content: ''
                 position: absolute
-                top: 50%
-                right: 50%
+                top: -19px
+                right: 10px
                 transform: translateY(-50%)
                 background-image: url('../img/magnifier.svg')
                 background-repeat: no-repeat
@@ -31,3 +37,32 @@
                 background-size: 26px 26px
             &:hover
                 cursor: pointer
+        &-close
+            position: relative
+            &:before
+                content: ''
+                position: absolute
+                transform: translateY(-50%)
+                background-repeat: no-repeat
+                width: 26px
+                height: 26px
+                background-image: url('../img/magnifier.svg')
+                bottom: -4px
+                right: 13px
+                background-size: 26px 26px                    
+        &-open
+            position: relative
+            background-color: #324b5c
+            &:before
+                content: ''
+                position: absolute
+                transform: translateY(-50%)
+                background-repeat: no-repeat
+                width: 26px
+                height: 26px
+                background-image: url('../img/close.svg')
+                bottom: -3px
+                right: 9px
+                background-size: 26px 26px
+                
+            

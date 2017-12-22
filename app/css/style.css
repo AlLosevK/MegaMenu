@@ -18,8 +18,10 @@ header {
   .whitespace-left {
     display: none; }
 
-.mmenu {
-  display: none; }
+.menu-mob {
+  height: 100%;
+  width: 100%;
+  position: relative; }
 
 .box {
   display: none;
@@ -76,7 +78,8 @@ header {
   margin: 0;
   width: 100%;
   max-width: 1180px;
-  background: #fff; }
+  background: #fff;
+  position: relative; }
 
 .pseudo {
   display: block;
@@ -162,15 +165,20 @@ header {
     vertical-align: middle;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
-  .menu-mob {
-    height: 100%;
-    width: 100%;
-    position: relative; }
 
 .search {
   width: 20%;
   text-align: center;
   height: 44px; }
+  .search__item {
+    display: block; }
+  .search-mob {
+    position: relative;
+    display: none;
+    height: 44px;
+    width: 60px;
+    border: none;
+    background-color: #fff; }
   .search form {
     height: 44px;
     position: relative; }
@@ -183,15 +191,12 @@ header {
   .search__btn {
     display: none; }
     .search__btn-custom {
-      position: relative;
-      width: 1.43vw;
-      height: 1.43vw;
-      margin: 0 0 0 -3%; }
+      position: relative; }
       .search__btn-custom:before {
         content: '';
         position: absolute;
-        top: 50%;
-        right: 50%;
+        top: -19px;
+        right: 10px;
         -webkit-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
                 transform: translateY(-50%);
@@ -203,6 +208,39 @@ header {
                 background-size: 26px 26px; }
       .search__btn-custom:hover {
         cursor: pointer; }
+    .search__btn-close {
+      position: relative; }
+      .search__btn-close:before {
+        content: '';
+        position: absolute;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+        background-repeat: no-repeat;
+        width: 26px;
+        height: 26px;
+        background-image: url("../img/magnifier.svg");
+        bottom: -4px;
+        right: 13px;
+        -webkit-background-size: 26px 26px;
+                background-size: 26px 26px; }
+    .search__btn-open {
+      position: relative;
+      background-color: #324b5c; }
+      .search__btn-open:before {
+        content: '';
+        position: absolute;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+        background-repeat: no-repeat;
+        width: 26px;
+        height: 26px;
+        background-image: url("../img/close.svg");
+        bottom: -3px;
+        right: 9px;
+        -webkit-background-size: 26px 26px;
+                background-size: 26px 26px; }
 
 .sign {
   width: 10%;
@@ -315,7 +353,7 @@ header {
   -webkit-box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.1);
   top: 44px;
-  left: -235px;
+  right: -180px;
   z-index: 10000; }
   .popsign__cloud {
     border-left: 1px #b5cad5 solid; }
@@ -409,7 +447,7 @@ header {
     margin: 0;
     padding: 0;
     list-style: none;
-    left: -350px;
+    right: 0;
     visibility: hidden;
     opacity: 0;
     -webkit-transform: translateY(15px);
@@ -504,6 +542,10 @@ header {
   visibility: visible;
   opacity: 1; }
 
+@media screen and (max-width: 1230px) {
+  .popsign {
+    right: -100px; } }
+
 @media screen and (max-width: 1080px) {
   .sign {
     width: 3%; }
@@ -519,9 +561,11 @@ header {
   .countries__item {
     display: none; }
   .countries__item-mob {
-    display: block; } }
+    display: block; }
+  .popsign {
+    right: -50px; } }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 800px) {
   .menu,
   .sign,
   .countries {
@@ -529,7 +573,7 @@ header {
   .menu-mob {
     display: block; }
   .pseudo-menu::before {
-    top: 0;
+    top: 5px;
     left: 50%; }
   .box {
     display: block; }
@@ -543,6 +587,18 @@ header {
     display: block; } }
 
 @media screen and (max-width: 600px) {
-  .search__btn-custom::before {
-    top: -100%;
-    right: -1.5em; } }
+  .search {
+    position: absolute;
+    top: 44px;
+    right: -71px;
+    width: 114%;
+    padding: 15px 0 10px;
+    background-color: #324b5c;
+    display: none; }
+    .search__content {
+      margin: 0 auto; }
+  .search__btn-custom {
+    top: 0;
+    right: 10px; }
+  .search-mob {
+    display: block; } }
