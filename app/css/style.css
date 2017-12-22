@@ -26,7 +26,7 @@ header {
 .box {
   display: none;
   position: relative;
-  width: 35px;
+  width: 50px;
   height: 35px; }
 
 .wrap {
@@ -221,7 +221,7 @@ header {
         height: 26px;
         background-image: url("../img/magnifier.svg");
         bottom: -4px;
-        right: 13px;
+        right: 11px;
         -webkit-background-size: 26px 26px;
                 background-size: 26px 26px; }
     .search__btn-open {
@@ -237,8 +237,8 @@ header {
         width: 26px;
         height: 26px;
         background-image: url("../img/close.svg");
-        bottom: -3px;
-        right: 9px;
+        bottom: -4px;
+        right: 12px;
         -webkit-background-size: 26px 26px;
                 background-size: 26px 26px; }
 
@@ -590,8 +590,7 @@ header {
   .search {
     position: absolute;
     top: 44px;
-    right: -71px;
-    width: 114%;
+    width: 100vw;
     padding: 15px 0 10px;
     background-color: #324b5c;
     display: none; }

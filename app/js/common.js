@@ -18,13 +18,13 @@ $(".country").click(function (e) {
 
 $(".search-mob").click(function (e) {
     e.preventDefault();
-    if ($(".search-mob").hasClass(".search__btn-open")) {
-        $(".search-mob").removeClass('search__btn-open');
-        $(".search-mob").addClass('search__btn-close');
+    if ($(this).hasClass('search__btn-open')) {
+        $(this).removeClass('search__btn-open');
+        $(this).addClass('search__btn-close');
         $(".search").fadeOut(400);
     } else {
-        $(".search-mob").removeClass('search__btn-close');
-        $(".search-mob").addClass('search__btn-open');
+        $(this).removeClass('search__btn-close');
+        $(this).addClass('search__btn-open');
         $(".search").fadeIn(400);
     };
 })
