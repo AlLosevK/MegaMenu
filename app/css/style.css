@@ -77,16 +77,27 @@ header {
     content: '';
     position: absolute;
     top: 0%;
-    left: 10%;
-    -webkit-transform: translate(-50%, 0);
-        -ms-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
+    left: 2%;
     background-repeat: no-repeat;
     background-image: url("../img/grid-world.svg");
     width: 35px;
     height: 30px;
-    -webkit-background-size: 35px 25px;
-            background-size: 35px 25px; }
+    -webkit-background-size: 35px 22px;
+            background-size: 35px 22px;
+    color: #324b5c; }
+  .pseudo-place:before {
+    content: '';
+    position: absolute;
+    top: 35%;
+    left: 0;
+    background-repeat: no-repeat;
+    background-image: url("../img/placeholder.svg");
+    width: 16px;
+    height: 24px;
+    -webkit-background-size: 16px 16px;
+            background-size: 16px;
+    visibility: hidden;
+    opacity: 0; }
 
 .logo {
   width: 150px; }
@@ -163,7 +174,7 @@ header {
     width: 70%;
     padding: 0 0 0 30%; }
 
-.country {
+.countries {
   width: 15%;
   height: 44px;
   padding: 0.75em 0 0 0;
@@ -319,7 +330,7 @@ header {
       line-height: 1;
       font-weight: bold; }
 
-.country:hover div.popcountry-top {
+.countries:hover div.popcountry-top {
   visibility: visible;
   opacity: 1;
   -webkit-transform: translateY(0);
@@ -330,7 +341,9 @@ header {
   padding: 18px 0;
   list-style: none;
   margin: 0;
-  padding: 0; }
+  padding: 25px 0 0 0;
+  z-index: 10000;
+  height: auto; }
   .popcountry-top {
     width: 560px;
     position: absolute;
@@ -350,45 +363,88 @@ header {
   .popcountry li {
     width: 34%;
     list-style: none;
-    margin: 0;
-    padding: 0; }
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 8px 10px 8px 10px;
+    text-align: left; }
   .popcountry__link {
-    padding: 7px 8px 7px 18px; }
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    font-size: 18px; }
   .popcountry__list {
     position: absolute;
     top: 0;
-    left: 34%;
+    left: 0px;
     width: 66%;
     padding: 17px 0 17px 34%;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
     background: #e1e8eb;
     margin-left: -34%;
     min-height: 210px;
     margin: 0;
-    list-style: none; }
+    list-style: none;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    z-index: 1; }
+    .popcountry__list:before {
+      width: 34%;
+      background: #cedade;
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      bottom: 0; }
+  .popcountry__active {
+    background: #e1e8eb;
+    z-index: 1000; }
+
+.active {
+  visibility: visible;
+  opacity: 1; }
+
+.popcountry li:hover .popcountry__list {
+  visibility: visible;
+  opacity: 1; }
 
 .countrylist {
   float: left;
-  width: 50%; }
+  width: 50%;
+  text-align: center; }
+  .countrylist li {
+    width: 100%;
+    display: block;
+    text-align: center;
+    position: relative;
+    z-index: 2; }
+    .countrylist li span {
+      width: 100%; }
+
+.countrylist-item:hover .pseudo-place:before {
+  visibility: visible;
+  opacity: 1; }
 
 .country {
   position: relative;
   padding: 5px 8px 5px 30px;
-  font-size: 15px;
+  font-size: 19px;
   display: block;
   color: #324b5c;
-  text-decoration: none; }
-  .country:before {
-    left: 9px;
-    top: -7px;
-    margin: 0;
-    opacity: 0;
-    width: 16px;
-    height: 24px;
-    content: '';
-    display: block;
-    position: absolute;
-    -webkit-background-size: 16px 16px;
-            background-size: 16px;
-    background-repeat: no-repeat;
-    background-image: url("../img/placeholder.svg");
-    color: #324b5c; }
+  text-decoration: none;
+  text-align: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .country:hover {
+    text-decoration: underline; }
+  .country__active {
+    font-weight: bold;
+    text-decoration: underline; }
+    .country__active:before {
+      visibility: visible;
+      opacity: 1; }
