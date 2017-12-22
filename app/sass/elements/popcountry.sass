@@ -3,13 +3,23 @@
     opacity: 1
     transform: translateY(0)
     
+.countries:hover .popcountry
+    visibility: visible
+    opacity: 1
+    
+.countries:hover .visible .popcountry__list
+    visibility: visible
+    opacity: 1
+    
 .popcountry
     padding: 18px 0
     list-style: none
     margin: 0
     padding: 25px 0 0 0
-    z-index: 10000
+    z-index: 100
     height: auto
+    visibility: hidden
+    opacity: 0
     &-top
         width: 560px
         position: absolute
@@ -28,6 +38,9 @@
         box-sizing: border-box
         padding: 8px 10px 8px 10px
         text-align: left
+        //visibility: hidden
+        //opacity: 0
+        //display: none
     &__link
         width: 100%
         position: relative
@@ -47,7 +60,7 @@
         list-style: none
         visibility: hidden
         opacity: 0
-        transition: all 0.4s
+        //transition: all 0.4s
         z-index: 1
         &:before
             width: 34%
@@ -61,16 +74,17 @@
             bottom: 0
     &__active        
         background: #e1e8eb
-        z-index: 1000
-        
+        z-index: 1000    
 
-.active
-    visibility: visible
-    opacity: 1
-
-.popcountry li:hover .popcountry__list
-    visibility: visible
-    opacity: 1
+//.popcountry li:hover .popcountry__list
+//    display: block
+//    visibility: visible
+//    opacity: 1
+//
+//.countries__item:hover .popcountry-top
+//    display: block
+//    visibility: visible
+//    opacity: 1 
 
 .countrylist
     float: left
@@ -108,3 +122,11 @@
         &:before
             visibility: visible
             opacity: 1
+    
+.popcountry__link:hover .visible .popcountry__list
+    visibility: hidden
+    opacity: 0
+    
+.popcountry__link:hover .popcountry__list
+    visibility: visible
+    opacity: 1
