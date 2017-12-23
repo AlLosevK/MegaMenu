@@ -140,7 +140,7 @@ header {
       background-repeat: no-repeat;
       background-image: url("../img/male.svg");
       width: 22px;
-      height: 10px;
+      height: 25px;
       -webkit-background-size: 22px 20px;
               background-size: 22px 20px; }
   .pseudo-country:before {
@@ -214,7 +214,8 @@ header {
   text-align: center;
   height: 44px;
   padding: 0 0 0 4%;
-  position: relative; }
+  position: relative;
+  margin: 0 1% 0 0; }
   .menu__content {
     display: block;
     width: 100%;
@@ -437,15 +438,13 @@ header {
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s; }
-  .sign:hover i:after {
-    top: 8px; }
 
 .popsign {
   visibility: hidden;
   opacity: 0;
-  -webkit-transform: translateY(15px);
-      -ms-transform: translateY(15px);
-          transform: translateY(15px);
+  -webkit-transform: translateY(-15px);
+      -ms-transform: translateY(-15px);
+          transform: translateY(-15px);
   -webkit-transition: all 0.6s;
   -o-transition: all 0.6s;
   transition: all 0.6s;
@@ -578,9 +577,9 @@ header {
     right: 0;
     visibility: hidden;
     opacity: 0;
-    -webkit-transform: translateY(15px);
-        -ms-transform: translateY(15px);
-            transform: translateY(15px);
+    -webkit-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+            transform: translateY(-15px);
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
     transition: all 0.4s; }
@@ -697,7 +696,29 @@ header {
   .countries__item-mob {
     display: block; }
   .popsign {
-    right: -50px; } }
+    right: -50px; }
+  .pseudo-country:after {
+    display: none; }
+  .pseudo-sign:after {
+    display: none; }
+  .countries:hover i::after {
+    top: 30px; }
+  .countries i::after {
+    left: 57%; }
+  .popcountry-top {
+    top: 50px;
+    right: -6px; }
+  .sign i::after {
+    top: 26px;
+    left: 35%; }
+  .pseudo-menu::before {
+    left: -30%; }
+  .whitespace {
+    width: 43%; } }
+
+@media screen and (max-width: 800px) {
+  .whitespace {
+    width: 33%; } }
 
 @media screen and (max-width: 800px) {
   .menu,

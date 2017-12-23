@@ -19,8 +19,29 @@
     .countries__item-mob
         display: block
     .popsign
-        right: -50px
+        right: -50px    
+    .pseudo-country:after
+        display: none
+    .pseudo-sign:after
+        display: none
+    .countries:hover i::after
+        top: 30px
+    .countries i::after
+        left: 57%
+    .popcountry-top
+        top: 50px
+        right: -6px
+    .sign i::after
+        top: 26px
+        left: 35%
+    .pseudo-menu::before
+        left: -30%
+    .whitespace
+        width: 43%
         
+@media screen and (max-width: 800px)
+    .whitespace
+        width: 33%
     
 @media screen and (max-width: 800px)
     .menu,
