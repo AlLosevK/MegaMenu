@@ -116,17 +116,17 @@ header {
   .pseudo-sign:after {
     content: '';
     position: absolute;
-    top: 3%;
-    right: 10%;
+    top: 30%;
+    right: 20%;
     -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
     background-repeat: no-repeat;
     background-image: url("../img/down-arrow.svg");
-    width: 25px;
-    height: 25px;
-    -webkit-background-size: 22px 20px;
-            background-size: 22px 20px; }
+    width: 22px;
+    height: 10px;
+    -webkit-background-size: 22px 10px;
+            background-size: 22px 10px; }
   .pseudo-sign-mob {
     padding-left: 50px !important; }
     .pseudo-sign-mob:before {
@@ -139,8 +139,8 @@ header {
               transform: translate(-50%, 0);
       background-repeat: no-repeat;
       background-image: url("../img/male.svg");
-      width: 25px;
-      height: 25px;
+      width: 22px;
+      height: 10px;
       -webkit-background-size: 22px 20px;
               background-size: 22px 20px; }
   .pseudo-country:before {
@@ -155,6 +155,20 @@ header {
     -webkit-background-size: 35px 22px;
             background-size: 35px 22px;
     color: #324b5c; }
+  .pseudo-country:after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    right: 0%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    background-repeat: no-repeat;
+    background-image: url("../img/down-arrow.svg");
+    width: 25px;
+    height: 25px;
+    -webkit-background-size: 22px 10px;
+            background-size: 22px 10px; }
   .pseudo-country-mob {
     padding-left: 50px !important; }
     .pseudo-country-mob:before {
@@ -302,6 +316,22 @@ header {
       display: none; }
   .sign-left {
     margin-top: auto; }
+  .sign i {
+    visibility: hidden;
+    opacity: 0; }
+    .sign i:after {
+      top: 21px;
+      left: 20%;
+      width: 24px;
+      height: 24px;
+      content: "";
+      display: block;
+      position: relative;
+      margin-left: -12px;
+      background: #e1e8eb;
+      -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotate(45deg); }
 
 .countries {
   width: 15%;
@@ -317,6 +347,22 @@ header {
       display: none; }
   .countries-left {
     margin-top: auto; }
+  .countries i {
+    visibility: hidden;
+    opacity: 0; }
+    .countries i:after {
+      top: 21px;
+      left: 20%;
+      width: 24px;
+      height: 24px;
+      content: "";
+      display: block;
+      position: relative;
+      margin-left: -12px;
+      background: #e1e8eb;
+      -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotate(45deg); }
 
 .menu:hover .popmenu {
   visibility: visible;
@@ -385,6 +431,15 @@ header {
       -ms-transform: translateY(0);
           transform: translateY(0); }
 
+.sign:hover i {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s; }
+  .sign:hover i:after {
+    top: 8px; }
+
 .popsign {
   visibility: hidden;
   opacity: 0;
@@ -402,7 +457,7 @@ header {
   position: absolute;
   -webkit-box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.1);
-  top: 44px;
+  top: 50px;
   right: -180px;
   z-index: 10000; }
   .popsign-mob {
@@ -495,6 +550,15 @@ header {
   visibility: visible;
   opacity: 1; }
 
+.countries:hover i {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s; }
+  .countries:hover i:after {
+    top: 6px; }
+
 .popcountry {
   padding: 18px 0;
   list-style: none;
@@ -534,7 +598,7 @@ header {
     font-size: 18px; }
   .popcountry__list {
     position: absolute;
-    top: 0;
+    top: 5px;
     left: 0px;
     width: 66%;
     padding: 17px 0 17px 34%;
