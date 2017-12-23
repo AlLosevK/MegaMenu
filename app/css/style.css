@@ -103,12 +103,26 @@ header {
     content: '';
     position: absolute;
     top: 0%;
-    left: 20%;
+    left: 10%;
     -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
     background-repeat: no-repeat;
     background-image: url("../img/male.svg");
+    width: 25px;
+    height: 25px;
+    -webkit-background-size: 22px 20px;
+            background-size: 22px 20px; }
+  .pseudo-sign:after {
+    content: '';
+    position: absolute;
+    top: 3%;
+    right: 10%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    background-repeat: no-repeat;
+    background-image: url("../img/down-arrow.svg");
     width: 25px;
     height: 25px;
     -webkit-background-size: 22px 20px;
@@ -283,7 +297,7 @@ header {
   position: relative; }
   .sign__item {
     width: 70%;
-    padding: 0 0 0 30%; }
+    padding: 0 20% 0 20%; }
     .sign__item-mob {
       display: none; }
   .sign-left {
