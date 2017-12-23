@@ -550,8 +550,6 @@ header {
   -webkit-transition: all 0.8s;
   -o-transition: all 0.8s;
   transition: all 0.8s; }
-  .countries:hover i:after {
-    top: 6px; }
 
 .popcountry {
   padding: 18px 0;
@@ -699,7 +697,9 @@ header {
 
 @media screen and (max-width: 1230px) {
   .popsign {
-    right: -100px; } }
+    right: -100px; }
+    .popsign i:after {
+      right: -63%; } }
 
 @media screen and (max-width: 1080px) {
   .sign {
@@ -723,20 +723,17 @@ header {
     display: none; }
   .pseudo-sign:after {
     display: none; }
-  .countries:hover i::after {
-    top: 30px; }
-  .countries i::after {
-    left: 57%; }
   .popcountry-top {
     top: 50px;
     right: -6px; }
-  .sign i::after {
-    top: 26px;
-    left: 35%; }
   .pseudo-menu::before {
     left: -30%; }
   .whitespace {
-    width: 43%; } }
+    width: 43%; }
+  .popsign i:after {
+    right: -88%; }
+  .popcountry-top i::after {
+    right: -97.6%; } }
 
 @media screen and (max-width: 800px) {
   .whitespace {
