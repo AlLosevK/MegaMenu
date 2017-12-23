@@ -589,13 +589,19 @@ header {
     list-style: none;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    padding: 8px 10px 8px 10px;
     text-align: left; }
+    .popcountry li.visible .popcountry__link {
+      background-color: #e1e8eb; }
   .popcountry__link {
     width: 100%;
+    display: block;
     position: relative;
     z-index: 2;
-    font-size: 18px; }
+    font-size: 18px;
+    padding: 8px 10px 8px 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    cursor: pointer; }
   .popcountry__list {
     position: absolute;
     top: 5px;

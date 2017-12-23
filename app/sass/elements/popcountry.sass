@@ -43,16 +43,18 @@
         width: 34%
         list-style: none
         box-sizing: border-box
-        padding: 8px 10px 8px 10px
         text-align: left
-        //visibility: hidden
-        //opacity: 0
-        //display: none
+        &.visible .popcountry__link
+            background-color: #e1e8eb
     &__link
         width: 100%
+        display: block
         position: relative
         z-index: 2
-        font-size: 18px        
+        font-size: 18px
+        padding: 8px 10px 8px 10px
+        box-sizing: border-box
+        cursor: pointer
     &__list
         position: absolute
         top: 5px
