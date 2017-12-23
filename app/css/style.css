@@ -113,6 +113,22 @@ header {
     height: 25px;
     -webkit-background-size: 22px 20px;
             background-size: 22px 20px; }
+  .pseudo-sign-mob {
+    padding-left: 50px !important; }
+    .pseudo-sign-mob:before {
+      content: '';
+      position: absolute;
+      top: 25%;
+      left: 8%;
+      -webkit-transform: translate(-50%, 0);
+          -ms-transform: translate(-50%, 0);
+              transform: translate(-50%, 0);
+      background-repeat: no-repeat;
+      background-image: url("../img/male.svg");
+      width: 25px;
+      height: 25px;
+      -webkit-background-size: 22px 20px;
+              background-size: 22px 20px; }
   .pseudo-country:before {
     content: '';
     position: absolute;
@@ -125,6 +141,22 @@ header {
     -webkit-background-size: 35px 22px;
             background-size: 35px 22px;
     color: #324b5c; }
+  .pseudo-country-mob {
+    padding-left: 50px !important; }
+    .pseudo-country-mob:before {
+      content: '';
+      position: absolute;
+      top: 25%;
+      left: 8%;
+      -webkit-transform: translate(-50%, 0);
+          -ms-transform: translate(-50%, 0);
+              transform: translate(-50%, 0);
+      background-repeat: no-repeat;
+      background-image: url("../img/grid-world.svg");
+      width: 25px;
+      height: 25px;
+      -webkit-background-size: 22px 20px;
+              background-size: 22px 20px; }
   .pseudo-place:before {
     content: '';
     position: absolute;
@@ -254,6 +286,8 @@ header {
     padding: 0 0 0 30%; }
     .sign__item-mob {
       display: none; }
+  .sign-left {
+    margin-top: auto; }
 
 .countries {
   width: 15%;
@@ -267,6 +301,8 @@ header {
     display: block; }
     .countries__item-mob {
       display: none; }
+  .countries-left {
+    margin-top: auto; }
 
 .menu:hover .popmenu {
   visibility: visible;
@@ -355,6 +391,9 @@ header {
   top: 44px;
   right: -180px;
   z-index: 10000; }
+  .popsign-mob {
+    background-color: #e1e8eb;
+    text-align: center; }
   .popsign__cloud {
     border-left: 1px #b5cad5 solid; }
   .popsign__item {
@@ -364,6 +403,17 @@ header {
     width: 50%;
     text-align: center;
     margin: 0; }
+    .popsign__item-mob {
+      padding: 20px 0 !important; }
+      .popsign__item-mob:after {
+        display: none !important; }
+      .popsign__item-mob:first-child {
+        border-bottom: 1px solid #b5cad5; }
+      .popsign__item-moblink {
+        display: inline-block !important;
+        width: 40%;
+        margin: 0 auto;
+        text-align: center; }
     .popsign__item-title {
       font-size: 18px;
       color: #333;
@@ -600,4 +650,9 @@ header {
     top: 0;
     right: 10px; }
   .search-mob {
-    display: block; } }
+    display: block; }
+  .popsign__item-sign {
+    width: 70%;
+    margin: 0 auto !important;
+    text-align: center;
+    color: #fff !important; } }

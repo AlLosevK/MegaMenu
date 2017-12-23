@@ -18,6 +18,9 @@
     top: 44px
     right: -180px
     z-index: 10000
+    &-mob
+        background-color: #e1e8eb
+        text-align: center
     &__cloud
         border-left: 1px #b5cad5 solid
     &__item
@@ -27,6 +30,17 @@
         width: 50%
         text-align: center
         margin: 0
+        &-mob            
+            padding: 20px 0 !important
+            &:after
+                display: none !important
+            &:first-child
+                border-bottom: 1px solid #b5cad5
+            &link
+                display: inline-block !important
+                width: 40%
+                margin: 0 auto
+                text-align: center
         &-title
             font-size: 18px
             color: #333
